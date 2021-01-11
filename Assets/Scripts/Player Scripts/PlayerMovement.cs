@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
 
-    // Private Player Animation player_Animation
+    private CharacterAnimation player_Anim;
 
     private Rigidbody myBody;
 
@@ -22,13 +22,14 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         myBody = GetComponent<Rigidbody>();
-        // player_Animation = GetComponentInChildren<PlayerAnimation>();
+        player_Anim = GetComponentInChildren<CharacterAnimation>();
     }
 
     // Update is called once per frame
     void Update()
     {
         RotatePlayer();
+        AnimatePlayerWalk();
     }
 
     void FixedUpdate() {
@@ -49,7 +50,18 @@ public class PlayerMovement : MonoBehaviour
         } else if (Input.GetAxisRaw(Axis.HORIZONTAL_AXIS) < 0) {
             transform.rotation = Quaternion.Euler(0f,Mathf.Abs(rotation_Y), 0f);
         }
-    }
+    } // Rotation
 
+
+    void AnimatePlayerWalk() {
+
+        if (Input.GetAxisRaw(Axis.HORIZONTAL_AXIS) != 0 || Input.GetAxisRaw(Axis.VERTICAL_AXIS) != 0) {
+            player_Anim.Walk(true);
+        } else {
+            player_Anim.Walk(false);
+        }
+
+
+    } // Animate Player Walk
 
 } // Class
