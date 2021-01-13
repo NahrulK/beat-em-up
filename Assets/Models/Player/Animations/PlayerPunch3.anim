@@ -26629,6 +26629,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.033333335
+    functionName: Left_Arm_Attack_Off
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.06666667
     functionName: Left_Arm_Attack_On
     data: 
@@ -26643,15 +26650,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.23333333
-    functionName: Left_Arm_Attack_Off
+  - time: 0.26666668
+    functionName: UnTagLeft_Arm
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.26666668
-    functionName: UnTagLeft_Arm
+  - time: 0.33333334
+    functionName: Left_Arm_Attack_Off
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

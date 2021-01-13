@@ -48967,6 +48967,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.033333335
+    functionName: Left_Leg_Attack_Off
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.13333334
     functionName: Attack_FX_Sound
     data: 
@@ -48981,15 +48988,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.26666668
-    functionName: Left_Leg_Attack_Off
+  - time: 0.3
+    functionName: UnTagLeft_Leg
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.3
-    functionName: UnTagLeft_Leg
+  - time: 0.33333334
+    functionName: Left_Leg_Attack_Off
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
